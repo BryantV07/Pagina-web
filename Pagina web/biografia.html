@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuke Murata</title>
+    <link rel="stylesheet" href="Diseño-Biografia.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="Contenido">
+
+            <div class="Menu container">
+
+                <a href="#" class="Logo">
+                    <img src="Img/Yusuke_Murata logo.jpg" alt="Logo pagina inicio">
+                </a>
+                <input type="checkbox" id="Menu"/>
+                <label for="Menu">
+                    <img src="Img/Icono tre lineas.png" class="Menu_icono" alt="">
+                </label>
+                <nav class="Barranav">
+                    <ul>
+                            <li><a href="Inicio.html">Inicio</a></li>
+                            <li><a href="biografia.html">Biografia</a></li>
+                            <li><a href="Arte.html">Arte</a></li>
+                          
+                    </ul>
+                </nav>
+                
+
+            </div>
+
+        </div>
+
+    </header>
+<!--Contenido principal-->
+<main class="Manifiesto">
+
+    <div class="Cuadro-gris">
+
+        <section class="Hero">
+            <h1>Biografía</h1>
+            <p>Trayectoria y desarrollo artístico</p>
+        </section>
+
+        <section class="BibliografiaGrid">
+
+            <article class="Bio">
+                <h2>Biografía General</h2>
+                <br>
+                <p>
+                Yūsuke Murata nació en 1978 en la Prefectura de Miyagi, Japón. Desde muy joven mostró un talento excepcional para el dibujo. A los doce años participó en un concurso para diseñar villanos del videojuego Mega Man 4 y ganó en dos ocasiones; sus diseños fueron adaptados para los personajes Dust Man y Crystal Man (este último en Mega Man 5).
+<br>
+<br>
+                En el ámbito personal, Murata anunció que tiene un hijo nacido en 2007 y una hija nacida en 2010. Ha comentado que tomó inspiración de sus propios hijos para algunos personajes en sus obras. En mayo de 2019 informó el fallecimiento de su padre.
+<br>
+<br>
+                El 1 de enero de 2024 anunció la creación de su propio estudio de animación llamado Village Studio, marcando una nueva etapa en su carrera.
+                </p>
+
+                
+            </article>
+
+            <article class="Obras">
+                <h2>Obras Destacadas</h2>
+                <br>
+                <ul>
+                    <li>Eyeshield 21</li>
+                    <li>One Punch-Man</li>
+                    <li>Gokiburi Buster</li>
+                </ul>
+
+                
+            </article>
+
+            <div class="Slider">
+                <div class="Slides">
+                    <img src="Img/Imagen-Slider1.jpg" alt="Dibujo 1" class="slide active">
+                    <img src="Img/Imagen-slider2.png" alt="Dibujo 2" class="slide">
+                    <img src="Img/Imagen-slider3.jpg" alt="Dibujo 3" class="slide">
+                    <img src="Img/Imagen-slider4.png" alt="Dibujo 4" class="slide">
+                </div>
+            </div>
+
+             <article class="Trayectoria">
+            <h3>Trayectoria Profesional</h3>
+            <br>
+            <p>
+                Murata debutó profesionalmente en 1995 con el one-shot Partner, publicado en una edición especial de la revista Weekly Shōnen Jump, lo que le valió el premio Hop Step. Posteriormente publicó otras historias cortas que le dieron reconocimiento, como Samui Hanashi, con la que obtuvo el Premio Akatsuka.
+<br>
+<br>
+                En 2002 inició uno de sus trabajos más importantes como ilustrador del manga Eyeshield 21, escrito por Riichiro Inagaki. La serie tuvo gran éxito, alcanzó 333 capítulos recopilados en 37 volúmenes y fue adaptada al anime en 2005.
+<br>
+<br>
+                Entre 2008 y 2010 publicó una versión renovada de Hetappi Manga Kenkyūjo R. También realizó múltiples one-shots como Madofuki Park, Blust! y Minds, demostrando versatilidad temática y artística.
+<br>
+<br>
+                En 2012 comenzó su colaboración con el autor ONE en la versión redibujada del webcómic One Punch-Man, publicada en línea por la revista Weekly Young Jump. La serie se convirtió en un fenómeno internacional y recibió adaptación al anime en 2015, consolidando a Murata como uno de los ilustradores más destacados de la industria.
+<br>
+<br>
+                Además, trabajó como diseñador de personajes en el anime Majin Bone y participó en diversos proyectos editoriales y colaboraciones especiales.
+            </p>
+
+            <div class="ImagenTrayectoria">
+                
+            </div>
+            </article>
+
+            <aside class="Datos">
+                <h4>Datos Relevantes</h4>
+                <br>
+                    <ul>
+                    <li>Especialista en escenas de acción dinámica.</li>
+                    <br>
+                    <li>Uso avanzado de sombras y perspectiva.</li>
+                    <br>
+                    <li>Alta disciplina en redibujos y perfeccionamiento.</li>
+                    <br>
+                    <li>Reconocido por su estilo cinematográfico.</li>
+                    <br>
+                    <li>Es reconocido por su nivel extremo de detalle,</li>
+                    <br>
+                    <li>composición dinámica y redibujos de alta calidad.</li>
+                    </ul>
+            </aside>
+
+        </section>
+
+        <footer class="FooterInterno">
+            <p>Esta bibliografía forma parte del Manifiesto de Diseño inspirado en
+            la obra y filosofía artística de Yusuke Murata.
+            </p>
+        </footer>
+
+    </div>
+
+</main>
+    <script>
+    const slides = document.querySelectorAll(".slide");
+    let index = 0;
+
+    function cambiarImagen(){
+        slides[index].classList.remove("active");
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("active");
+    }
+
+    setInterval(cambiarImagen, 7000); // 7000ms = 7 segundos
+</script>
+</body>
+</html>

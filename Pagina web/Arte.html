@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte - Yusuke Murata</title>
+    <link rel="stylesheet" href="Diseño-arte.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+</head>
+<body>
+
+<header>
+    <div class="Contenido">
+        <div class="Menu container">
+
+            <a href="#" class="Logo">
+                <img src="Yusuke_Murata logo.jpg" alt="">
+            </a>
+
+            <input type="checkbox" id="Menu"/>
+            <label for="Menu">
+                <img src="Img/Icono tre lineas.png" class="Menu_icono" alt="">
+            </label>
+
+            <nav class="Barranav">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="biografia.html">Biografia</a></li>
+                    <li><a href="Arte.html">Arte</a></li>
+                    
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</header>
+
+<!-- MISMO DISEÑO QUE INICIO -->
+<main class="Manifiesto">
+
+    <div class="Cuadro-gris">
+
+        <!-- TÍTULO -->
+        <section class="Hero">
+            <h1>Arte</h1>
+            <h2>Yusuke Murata</h2>
+        </section>
+
+        <!-- FOTO CENTRADA -->
+        <section class="Foto-Murata">
+            <img src="Img/Yusuke_Murata (2).jpg" alt="Yusuke Murata">
+        </section>
+
+        <!-- SUBTÍTULO -->
+        <section class="Titulo-Artes">
+            <h2>Artes</h2>
+        </section>
+
+        <!-- GRID DE IMAGENES -->
+        <section class="Grid-Artes">
+
+            <a href="Video/Fubuki_video.mp4" class="glightbox" data-type="video">
+                <video autoplay muted loop playsinline src="Video/Fubuki_video.mp4"></video>
+            </a>
+
+            <a href="Img/GenosXtatsumaki.png" data-lightbox="galeria">
+                <img src="Img/GenosXtatsumaki.png" alt="">
+            </a>
+
+            <a href="Img/Saitama X Garou.jpg" data-lightbox="galeria">
+                <img src="Img/Saitama X Garou.jpg" alt="">
+            </a>
+
+            <a href="Img/spiderman-Murata.webp" data-lightbox="galeria">
+                <img src="Img/spiderman-Murata.webp" alt="">
+            </a>
+
+            <a href="Img/KOF-murata.jpg" data-lightbox="galeria">
+                <img src="Img/KOF-murata.jpg" alt="">
+            </a>
+
+            <a href="Img/Nave.jpg" data-lightbox="galeria">
+                <img src="Img/Nave.jpg" alt="">
+            </a>
+
+            <a href="Img/Garou.jpg" data-lightbox="galeria">
+                <img src="Img/Garou.jpg" alt="">
+            </a>
+
+            <a href="Img/SpiderXotto.jpg" data-lightbox="galeria">
+                <img src="Img/SpiderXotto.jpg" alt="">
+            </a>
+
+        </section>
+
+    </div>
+
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+const lightbox = GLightbox({
+    selector: '.glightbox'
+});
+</script>
+</body>
+</html>
